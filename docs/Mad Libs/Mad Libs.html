@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MadLibs</title>
+</head>
+
+<style>
+  #text {
+    display: none;
+  }
+</style>
+
+<script>
+  function submit() {
+    var nounWord = document.getElementById("nounField").value;
+    document.getElementById("noun").innerHTML = nounWord;
+
+    document.getElementById("text").style.display = "block";
+  }
+</script>
+
+
+<body>
+
+Noun: <input type="text" id="nounField"><br>
+<br><button id="submitButton" onclick="submit()">Submit</button>
+
+<p id="text">This is my <span id="noun"></span>.</p>
+
+</body>
+</html>
